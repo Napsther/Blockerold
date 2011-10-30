@@ -1,0 +1,27 @@
+name: Blocker
+main: me.Napsther.Blocker.Blocker
+version: 1.0
+description: A plugin that blockes the placement of Wather, Lava, Fier and tnt. It also lets players change game mode.
+load: POSTWORLD
+author: Napsther
+website: http://kaidev.net
+database: false
+commands:
+  mode:
+    description: Toggles game mode.
+    permission: blocker.mode
+    usage: |
+      /<command>
+permission:
+  blocker.mode:
+    description: Allows player to change his game mode.
+    default: false
+  blocker.placeLiquid:
+    description: Allows player to place a liquid.
+    default: false
+  blocker.build:
+    description: Allows player to build.
+    default: false
+  blocker.burn:
+    description: Allows player to place tnt & fier.
+    default: false
